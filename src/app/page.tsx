@@ -23,6 +23,7 @@ export default function HomePage() {
       }
       const data: Pokemon = await res.json();
       setPokemon(data);
+      /* eslint-disable @typescript-eslint/no-explicit-any */
     } catch (err: any) {
       setError(err.message || "Something went wrong");
     } finally {
